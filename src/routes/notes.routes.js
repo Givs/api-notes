@@ -7,5 +7,6 @@ const notesController = new NotesController
 
 
 notesRouters.post("/:user_id", notesController.create)
+notesRouters.get("/:id", notesController.show)
 
 module.exports = notesRouters
